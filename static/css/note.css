@@ -1,0 +1,75 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgrey;
+}
+
+fieldset#editor {
+    min-height: 700px;
+    max-width: 60%;
+    width: 60%;
+    background-color: whitesmoke;
+    border: none;
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+input.fonter {
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: lightgray solid 2px;
+    margin-left: 30px;
+    margin-right: 10px;
+    background-color: white;
+    color: gray;
+    transition-duration: 450ms;
+    margin-bottom: 5px;
+    width: 30px;
+    margin-top: 5px;
+}
+
+button.fonter, input.del {
+    width: 60px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: lightgray solid 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: white;
+    color: gray;
+    transition-duration: 450ms;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+button.fonter:hover, input.fonter:hover, input.del:hover {
+    color: black;
+    background-color: lightgray;
+    border-color: gray;
+}
+
+div#toolkit {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 50px;
+
+}

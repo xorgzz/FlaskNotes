@@ -1,0 +1,7 @@
+[
+    {
+        "username": "test",
+        "passHash": "ce69f6c161a712f5868bdaf41119a47b3899b7131dd0d390e609355cf6b285955c1c3532ec767ab1447fd91e8b189611a326d6c9f894779283cd83b40034167a",
+        "config": "notes/test/test.conf.json"
+    }
+]

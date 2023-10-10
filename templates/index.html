@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">        
+{% endblock %}
+{% block body %}
+<div id="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+<form id="login" method="POST", action="">
+    {% block hhh %}<h3>Flask Notes</h3>{% endblock %}
+    <label for="username">Username</label>
+    <input name="username" type="text" placeholder="Username" id="username">
+    {% block sn %}{% endblock %}
+    <label for="password">Password</label>
+    <input name="password" type="password" placeholder="Password" id="password">
+    <button>{% block bbb %}Login{% endblock %}</button>
+    <br><block>{{bad}}</block>
+</form>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/note.css') }}">
+<style>
+</style>  
+{% endblock %}
+{% block body %}
+<div id="toolkit">
+	<button class="fonter" onclick="document.execCommand('italic', false, null);"><i style="font-family: monospace;">I</i></button>
+	<button class="fonter" onclick="document.execCommand('bold', false, null);"><b style="font-family: monospace;">B</b></button>
+	<button class="fonter" onclick="document.execCommand('underline', false, null);"><u style="font-family: monospace;">U</u></button>
+	<button class="fonter" onclick="document.execCommand('fontSize', false, 2);"><block style="font-family: monospace;">F1</block></button>
+	<button class="fonter" onclick="document.execCommand('fontSize', false, 3);"><block style="font-family: monospace;">N</block></button>
+	<button class="fonter" onclick="document.execCommand('fontSize', false, 5);"><block style="font-family: monospace;">F5</block></button>
+	<button class="fonter" onclick="document.execCommand('fontSize', false, 6);"><block style="font-family: monospace;">F6</block></button>
+	<input class="fonter" type="submit" form="textupl" value="&#8676;" style="font-family: monospace; rotate: -90deg;">
+	<input class="del" type="submit" value="DEL" form="del" style="height: 35px;">
+</div>
+<form method="POST" id="del"></form>
+<form method="POST" id="textupl">
+<input type="text" id="text" name="text" hidden>
+<fieldset id="editor" contenteditable="true" form="textupl">{% autoescape off %}{{ text }}{% endautoescape %}</fieldset>
+</form>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
